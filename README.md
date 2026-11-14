@@ -2,9 +2,7 @@
 
 CoMotion is a research system for interactive semantic steering of text-generated 3D human motion. Enter an English prompt, generate a baseline motion, and refine it with sliders for six prompt-relevant atomic actions. Compare the baseline and current motion in the browser and export either as an MP4 or NumPy array.
 
-**CoMotion: A Real-Time System for User-Driven Semantic Steering in Text-to-Motion Generation**  
-Zeyuan Fan and Chengshuo Xia · Guangzhou Institute of Technology, Xidian University  
-PACMHCI, 2026 · [Paper](https://doi.org/10.1145/3859320) · [BibTeX](CITATION.bib)
+Zeyuan Fan and Chengshuo Xia · Guangzhou Institute of Technology, Xidian University
 
 ![A text prompt generates a baseline motion. The user then adjusts action sliders to steer the result toward the intended motion.](docs/comotion-overview.png)
 
@@ -78,7 +76,6 @@ Alternatively, copy `config.example.json` to `config.json`, edit it, and run `py
 
 **Retry** generates a new baseline for the last prompt. Outputs and session state are written under `data/` by default: `comotion.sqlite3`, `sessions/`, and `media/jobs/`. Restarting with the same data directory preserves the stored files; reloading the webpage starts a new browser session. The default 10 GiB data limit rejects new jobs once storage is full; it does not delete existing results automatically.
 
-
 ## Layout
 
 ```text
@@ -105,10 +102,5 @@ cd ..
 ```
 
 Node.js is needed only for frontend tests. Unit tests use small fixtures; generating real motion requires the downloaded models and GPU.
-
-## Citation
-
-If you use CoMotion in research, please cite the [paper](https://doi.org/10.1145/3859320). Citation metadata is available in [BibTeX](CITATION.bib) and [Citation File Format](CITATION.cff).
-
 
 See [NOTICE](NOTICE) for attribution and [licenses/](licenses/) for additional third-party license terms.
