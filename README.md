@@ -55,7 +55,7 @@ python run.py --check
 python run.py
 ```
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser. The `--check` command checks the configuration, required model files, port availability, Python imports, and CUDA.
+The `--check` command checks the configuration, required model files, port availability, Python imports, and CUDA.
 
 For a different port or storage location:
 
